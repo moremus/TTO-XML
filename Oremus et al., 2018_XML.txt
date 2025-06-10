@@ -1,0 +1,3425 @@
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="2.0">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">JFR</journal-id>
+<journal-id journal-id-type="nlm-ta">JMIR Formativ Res</journal-id>
+<journal-title>JMIR Formative Research</journal-title>
+<issn pub-type="epub">2561-326X</issn>
+<publisher>
+<publisher-name>JMIR Publications</publisher-name>
+<publisher-loc>Toronto, Canada</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">v2i1e3</article-id>
+<article-id pub-id-type="pmid">30684429</article-id>
+<article-id pub-id-type="doi">10.2196/formative.8202</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Original Paper</subject>
+</subj-group>
+<subj-group subj-group-type="article-type">
+<subject>Original Paper</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A Computer-Assisted Personal Interview App in Research Electronic Data Capture for Administering Time Trade-off Surveys (REDCap): Development and Pretest</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="editor">
+<name>
+<surname>Eysenbach</surname>
+<given-names>Gunther</given-names>
+</name>
+</contrib>
+</contrib-group>
+<contrib-group>
+<contrib contrib-type="reviewer">
+<name>
+<surname>Luo</surname>
+<given-names>Nan</given-names>
+</name>
+</contrib>
+<contrib contrib-type="reviewer">
+<name>
+<surname>Lenert</surname>
+<given-names>Leslie</given-names>
+</name>
+</contrib>
+</contrib-group>
+<contrib-group>
+<contrib contrib-type="author" id="contrib1" corresp="yes">
+<name name-style="western">
+<surname>Oremus</surname>
+<given-names>Mark</given-names>
+</name>
+<degrees>PhD</degrees>
+<xref rid="aff1" ref-type="aff">1</xref>
+<address>
+<institution>School of Public Health and Health Systems</institution>
+<institution>University of Waterloo</institution>
+<addr-line>200 University Ave W</addr-line>
+<addr-line>Waterloo, ON,</addr-line>
+<country>Canada</country>
+<phone>1 519 888 4567 ext 35129</phone>
+<email>moremus@uwaterloo.ca</email>
+</address>
+<ext-link ext-link-type="orcid">http://orcid.org/0000-0001-8190-253X</ext-link>
+</contrib>
+<contrib contrib-type="author" id="contrib2">
+<name name-style="western">
+<surname>Sharafoddini</surname>
+<given-names>Anis</given-names>
+</name>
+<degrees>MSc</degrees>
+<xref rid="aff1" ref-type="aff">1</xref>
+<ext-link ext-link-type="orcid">http://orcid.org/0000-0003-4231-8116</ext-link>
+</contrib>
+<contrib contrib-type="author" id="contrib3">
+<name name-style="western">
+<surname>Morgano</surname>
+<given-names>Gian Paolo</given-names>
+</name>
+<degrees>MSc</degrees>
+<xref rid="aff2" ref-type="aff">2</xref>
+<ext-link ext-link-type="orcid">http://orcid.org/0000-0001-7577-7963</ext-link>
+</contrib>
+<contrib contrib-type="author" id="contrib4">
+<name name-style="western">
+<surname>Jin</surname>
+<given-names>Xuejing</given-names>
+</name>
+<degrees>MSc</degrees>
+<xref rid="aff2" ref-type="aff">2</xref>
+<xref rid="aff3" ref-type="aff">3</xref>
+<ext-link ext-link-type="orcid">http://orcid.org/0000-0003-3513-2364</ext-link>
+</contrib>
+<contrib contrib-type="author" id="contrib5">
+<name name-style="western">
+<surname>Xie</surname>
+<given-names>Feng</given-names>
+</name>
+<degrees>PhD</degrees>
+<xref rid="aff2" ref-type="aff">2</xref>
+<xref rid="aff3" ref-type="aff">3</xref>
+<xref rid="aff4" ref-type="aff">4</xref>
+<ext-link ext-link-type="orcid">http://orcid.org/0000-0003-3454-6266</ext-link>
+</contrib>
+</contrib-group>
+<aff id="aff1">
+<sup>1</sup>
+<institution>School of Public Health and Health Systems</institution>
+<institution>University of Waterloo</institution>
+<addr-line>Waterloo, ON</addr-line>
+<country>Canada</country>
+</aff>
+<aff id="aff2">
+<sup>2</sup>
+<institution>Department of Health Research Methods, Evidence, and Impact</institution>
+<institution>McMaster University</institution>
+<addr-line>Hamilton, ON</addr-line>
+<country>Canada</country>
+</aff>
+<aff id="aff3">
+<sup>3</sup>
+<institution>Program for Health Economics and Outcome Measures</institution>
+<addr-line>Hamilton, ON</addr-line>
+<country>Canada</country>
+</aff>
+<aff id="aff4">
+<sup>4</sup>
+<institution>Centre for Evaluation of Medicines</institution>
+<institution>St. Joseph’s Healthcare Hamilton</institution>
+<addr-line>Hamilton, ON</addr-line>
+<country>Canada</country>
+</aff>
+<author-notes>
+<corresp>
+Corresponding Author: Mark Oremus
+<email>moremus@uwaterloo.ca</email>
+</corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<season>Jan-Jun</season>
+<year>2018</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>23</day>
+<month>01</month>
+<year>2018</year>
+</pub-date>
+<volume>2</volume>
+<issue>1</issue>
+<elocation-id>e3</elocation-id>
+<!-- history from ojs - api-xml -->
+<history>
+<date date-type="received">
+<day>13</day>
+<month>6</month>
+<year>2017</year>
+</date>
+<date date-type="rev-request">
+<day>22</day>
+<month>11</month>
+<year>2017</year>
+</date>
+<date date-type="rev-recd">
+<day>1</day>
+<month>12</month>
+<year>2017</year>
+</date>
+<date date-type="accepted">
+<day>6</day>
+<month>12</month>
+<year>2017</year>
+</date>
+</history>
+<!-- (c) the authors - correct author names and publication date here if necessary. Date in form ', dd.mm.yyyy' after jmir.org -->
+<copyright-statement>©Mark Oremus, Anis Sharafoddini, Gian Paolo Morgano, Xuejing Jin, Feng Xie. Originally published in JMIR Formative Research (http://formative.jmir.org), 23.01.2018.</copyright-statement>
+<copyright-year>2018</copyright-year>
+<license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by/4.0/">
+<p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in JMIR Formative Research, is properly cited. The complete bibliographic information, a link to the original publication on http://formative.jmir.org, as well as this copyright and license information must be included.</p>
+</license>
+<self-uri xlink:href="http://formative.jmir.org/2018/1/e3/" xlink:type="simple"/>
+<related-article related-article-type="correction-forward" xlink:title="This is a corrected version. See correction statement in:" xlink:href="http://formative.jmir.org/2018/2/e11436/" vol="2" page="e11436"> </related-article>
+<abstract>
+<sec sec-type="background">
+<title>Background</title>
+<p>The time trade-off (TTO) task is a method of eliciting health utility scores, which range from 0 (equivalent to death) to 1 (equivalent to perfect health). These scores numerically represent a person’s health-related quality of life. Software apps exist to administer the TTO task; however, most of these apps are poorly documented and unavailable to researchers.</p>
+</sec>
+<sec sec-type="objective">
+<title>Objective</title>
+<p>To fill the void, we developed an online app to administer the TTO task for a research study that is examining general public proxy health-related quality of life estimates for persons with Alzheimer’s disease. This manuscript describes the development and pretest of the app.</p>
+</sec>
+<sec sec-type="methods">
+<title>Methods</title>
+<p>We used Research Electronic Data Capture (REDCap) to build the TTO app. The app’s modular structure and REDCap’s object-oriented environment facilitated development. After the TTO app was built, we recruited a purposive sample of 11 members of the general public to pretest its functionality and ease of use.</p>
+</sec>
+<sec sec-type="results">
+<title>Results</title>
+<p>Feedback from the pretest group was positive. Minor modifications included clarity enhancements, such as rearranging some paragraph text into bullet points, labeling the app to delineate different question sections, and revising or deleting text. We also added a research question to enable the identification of respondents who know someone with Alzheimer’s disease.</p>
+</sec>
+<sec sec-type="conclusions">
+<title>Conclusions</title>
+<p>We developed an online app to administer the TTO task. Other researchers may access and customize the app for their own research purposes.</p>
+</sec>
+</abstract>
+<kwd-group>
+<kwd>computer-assisted personal interview</kwd>
+<kwd>health-related quality-of-life</kwd>
+<kwd>REDCap</kwd>
+<kwd>time trade-off</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec sec-type="introduction">
+<title>Introduction</title>
+<p>
+Health-related quality of life (HRQoL) is an individual’s normative perception of how disease and treatment affect their physical, functional, psychological, and social well-being [
+<xref ref-type="bibr" rid="ref1">1</xref>
+]. HRQoL can be measured using health utility scores, which lie on an interval scale ranging from 0 (equivalent to death) to 1 (equivalent to full health).
+</p>
+<p>
+Numerous methods exist to elicit health utility scores [
+<xref ref-type="bibr" rid="ref2">2</xref>
+,
+<xref ref-type="bibr" rid="ref3">3</xref>
+]. One method is the time trade-off (TTO) method [
+<xref ref-type="bibr" rid="ref4">4</xref>
+], which has three variants: conventional [
+<xref ref-type="bibr" rid="ref4">4</xref>
+], lead-time [
+<xref ref-type="bibr" rid="ref5">5</xref>
+], and composite [
+<xref ref-type="bibr" rid="ref6">6</xref>
+]. Regardless of the variant, the basic premise of TTO remains the same: individuals read a brief description of a health state and choose between two (usually hypothetical) outcomes (ie, Life A or Life B). For example, Life A involves living in a full health state for
+<italic>x</italic>
+years, followed by death. Life B involves living in the health state in question for a fixed number of years (
+<italic>t,</italic>
+usually 10 years), followed by death. The lead-time and composite TTO approaches involve adding additional years of life in full health (
+<italic>l</italic>
+) to both Life A and Life B [
+<xref ref-type="bibr" rid="ref3">3</xref>
+].
+</p>
+<p>
+After being presented with Life A and Life B, individuals may choose Life A, Life B, or they can say that the two options are equivalent. When individuals choose Life A or B, they are presented with a second iteration where
+<italic>t</italic>
+in Life B is held constant, but
+<italic>x</italic>
+in Life A is varied to reflect a changing length of time in full health. Once again, individuals are asked to choose between Life A or B, or equivalence. Subsequent iterations involve further variations of
+<italic>x</italic>
+in Life A, while
+<italic>t</italic>
+in Life B is always held constant. The iterations continue until individuals indicate that Life A and Life B are equivalent, that is, they are indifferent between the two choices. Once the point of indifference is known, researchers use a formula to calculate the health utility score. The formula differs according to the TTO variant [
+<xref ref-type="bibr" rid="ref4">4</xref>
+-
+<xref ref-type="bibr" rid="ref6">6</xref>
+].
+</p>
+<p>
+Early protocols called for the TTO task to be administered using a paper-and-pencil format in face-to-face interviews [
+<xref ref-type="bibr" rid="ref7">7</xref>
+]. Interviewers used props such as cards, colored envelopes, and custom-made boards with sliding scales to depict health states and the number of years spent in Life A and Life B. The sliding scales permitted interviewers to visually illustrate differences between the various iterations of Life A and Life B.
+</p>
+<p>
+To standardize the TTO task and ease the burden of using multiple props to administer the activity, researchers developed computer-assisted personal interview (CAPI) software such as U-titer [
+<xref ref-type="bibr" rid="ref8">8</xref>
+] and iMPACT3 [
+<xref ref-type="bibr" rid="ref9">9</xref>
+] to replace the paper-and-pencil format. The EuroQol Group currently uses CAPI software (EuroQol Valuation Technology [EQ-VT]) [
+<xref ref-type="bibr" rid="ref10">10</xref>
+-
+<xref ref-type="bibr" rid="ref12">12</xref>
+] to administer the TTO task in studies designed to value health states for the EQ-5D [
+<xref ref-type="bibr" rid="ref13">13</xref>
+,
+<xref ref-type="bibr" rid="ref14">14</xref>
+] (a 5-item questionnaire created to measure HRQoL). Despite the documented existence of these three software apps, U-titer and iIMPACT3 do not appear to be available any longer. The EQ-VT’s technical specifications have not been published, and the software does not appear to be available on the EuroQol Group’s website [
+<xref ref-type="bibr" rid="ref15">15</xref>
+].
+</p>
+<sec>
+<title>The Need for a Computer-Assisted Personal Interview Time Trade-Off App</title>
+<p>
+Our interest in TTO emerges from research examining whether the general public can act as a proxy and estimate HRQoL in place of persons with Alzheimer’s disease (AD) [
+<xref ref-type="bibr" rid="ref16">16</xref>
+]. We plan to ask members of the general public to read descriptions of the mild, moderate, and severe health states of AD. Subsequently, they will perform the TTO task for each health state and generate health utility scores for each state. The health utility scores from the general public will be compared to a set of similarly elicited scores from persons with AD. We have already established that the general public can use health state descriptions to discriminate between mild, moderate, and severe AD [
+<xref ref-type="bibr" rid="ref16">16</xref>
+].
+</p>
+<p>To enable the interviewing of participants in multiple locations, we decided the TTO task should be administered using CAPI rather than paper-and-pencil. We wanted interviewers to carry only a laptop between locations, instead of bulky sets of forms, props, and writing materials.</p>
+<p>
+Prior to developing our own CAPI app, we reviewed the literature to assess whether existing software could serve our purpose. We found 13 TTO studies that reported using CAPI software during in-person interviews: 7 studies used the EQ-VT [
+<xref ref-type="bibr" rid="ref11">11</xref>
+,
+<xref ref-type="bibr" rid="ref12">12</xref>
+,
+<xref ref-type="bibr" rid="ref17">17</xref>
+-
+<xref ref-type="bibr" rid="ref21">21</xref>
+] and 6 did not describe the specific software [
+<xref ref-type="bibr" rid="ref22">22</xref>
+-
+<xref ref-type="bibr" rid="ref27">27</xref>
+]. Of these 6 studies, one [
+<xref ref-type="bibr" rid="ref23">23</xref>
+] cited a previous study [
+<xref ref-type="bibr" rid="ref28">28</xref>
+] as the source of the CAPI software. The previous study contained screenshots of the software but no technical details. Another 2 of the 6 studies reported using hard-copy visual aids to conduct the TTO task, with CAPI software reserved for data entry only [
+<xref ref-type="bibr" rid="ref24">24</xref>
+,
+<xref ref-type="bibr" rid="ref25">25</xref>
+]. A total of 22 other studies used Internet-based CAPI software, where participants logged onto websites and completed the TTO task on their own, without an interviewer present [
+<xref ref-type="bibr" rid="ref22">22</xref>
+,
+<xref ref-type="bibr" rid="ref29">29</xref>
+-
+<xref ref-type="bibr" rid="ref49">49</xref>
+]. Five [
+<xref ref-type="bibr" rid="ref30">30</xref>
+-
+<xref ref-type="bibr" rid="ref34">34</xref>
+] of these 22 studies provided screenshots of the software, but none of the 22 studies described the technical details of the software.
+</p>
+<p>
+The lack of information on existing CAPI software led us to develop our own Web-based app with a point-and-click interface to administer the TTO task. This paper describes the technical details and pretest of the app. At the outset, we specified two prerequisites for the app. First, the mild, moderate, and severe health states of AD would have to be presented to study participants in one of six random orders to help minimize biases due to ordering effects. This is because we will ask members of the general public and persons with AD to perform the TTO task for all three AD health states. Second, the app would start the lead-time TTO iterations at a value of 20 years in perfect health followed by death for Life A (
+<italic>x</italic>
+=10;
+<italic>l</italic>
+=10). The static Life B comparator would be 10 years in perfect health, followed by 10 years in the AD health state in question (
+<italic>t</italic>
+=10), and then death.
+<xref ref-type="app" rid="app1">Multimedia Appendix 1</xref>
+shows the iterations in our software. Health utility scores would be calculated using the following formula:
+<italic>(x – l)/t</italic>
+, with
+<italic>x</italic>
+being the amount of time in perfect health (Life A) at the point of indifference between Life A and Life B. The formula permits the calculation of health utility scores less than 0, which represent health states worse than death (eg, persistent vegitative state).
+</p>
+<p>
+Our TTO app is still in its formative stages. The content of the app is based on established lead-time TTO methods [
+<xref ref-type="bibr" rid="ref5">5</xref>
+] that have been implemented in a large valuation study conducted by one of the co-authors (FX) [
+<xref ref-type="bibr" rid="ref50">50</xref>
+]. We report on the development and initial pretest results for the app, which is Web-based and freely available to all potential users.
+</p>
+</sec>
+</sec>
+<sec sec-type="methods">
+<title>Methods</title>
+<p>
+We used the Research Electronic Data Capture (REDCap) app [
+<xref ref-type="bibr" rid="ref51">51</xref>
+] to build the TTO app. REDCap is a secured Web-based app that allows researchers to create CAPI apps for collecting, storing, and manipulating research data. REDCap is hosted on the server of the University of Waterloo, and we selected it as the preferred platform because of the following features: (1) minimal programming requirements, (2) easy accessibility to the TTO app across academic departments and institutions (at the time of writing, REDCap has 1911 active institutional partners), (3) flexibility in defining user privileges, such as limited/temporary privileges, (4) real-time data format/range validation, (5) data export options for common statistical software packages (eg, SPSS, SAS, R), (6) software and support for no charge, (7) modest hardware and software requirements, and (8) availability as a mobile app.
+</p>
+<p>
+The TTO app was designed in a modular format. Its overall structure is presented in
+<xref ref-type="fig" rid="figure1">Figure 1</xref>
+. The app’s modular structure and REDCap’s object-oriented environment facilitate the app’s ready customization to meet researchers’ needs (
+<xref ref-type="fig" rid="figure2">Figure 2</xref>
+). In addition to accessibility through the project home page, the TTO-CAPI eXtensible markup language (XML) file and installation manual are included as
+<xref ref-type="app" rid="app2">Multimedia Appendices 2</xref>
+and
+<xref ref-type="app" rid="app3">3</xref>
+to guarantee the availability of the software in the future. The detailed methodology to construct the TTO app follows.
+</p>
+<sec>
+<title>Time Trade-Off Software</title>
+<p>
+As shown in
+<xref ref-type="fig" rid="figure1">Figure 1</xref>
+, there are four data collection instruments in the TTO app:
+</p>
+<list list-type="order">
+<list-item>
+<p>Preliminary information: demographic data (ie, age, gender, education level, income level), knowing anyone with AD, and EQ-5D-5L (5L indicates 5 response options per question); this instrument assigns a unique identification number to each record (study participant) in the background</p>
+</list-item>
+<list-item>
+<p>Mild AD: Mild AD TTO data; EQ-5D-5L data (participants answer the EQ-5D-5L as if they had AD according to the health state description just read [all three health states])</p>
+</list-item>
+<list-item>
+<p>Moderate AD: Moderate AD TTO data; EQ-5D-5L data</p>
+</list-item>
+<list-item>
+<p>Severe AD: Severe AD TTO data; EQ-5D-5L data</p>
+</list-item>
+</list>
+<p>
+In each of the three AD instruments (numbers 2-4 above), questions appear in an order based on the end-user responses to TTO iterations shown in
+<xref ref-type="app" rid="app1">Multimedia Appendix 1</xref>
+. In REDCap, each singular data entry is called a
+<italic>field</italic>
+. Various types of project fields were used to house questions and then combined in sequence one after the other to form the instruments. The following project fields were used to design the instruments: text box, multiple-choice radio buttons, multiple-choice drop-down list, yes-no, descriptive text, and calculated field. Hypertext markup language (HTML) tags were used to customize the appearance of the text in each of the instruments.
+</p>
+<fig id="figure1" position="float">
+<label>Figure 1</label>
+<caption>
+<p>Modular structure of the time trade-off (TTO) app. AD: Alzheimer’s disease; EQ-5D: EuroQol 5-dimension.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig1.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<fig id="figure2" position="float">
+<label>Figure 2</label>
+<caption>
+<p>Workflow for accessing the time trade-off (TTO) app. REDCap: Research Electronic Data Capture.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig2.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<fig id="figure3" position="float">
+<label>Figure 3</label>
+<caption>
+<p>Six possible navigation options between Alzheimer's disease (AD) instruments based on mode.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig3.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<p>We employed two logic options in the TTO app:</p>
+<list list-type="order">
+<list-item>
+<p>
+Survey queue: a set of navigation conditions was defined to ensure the three TTO tasks would appear in a uniformly random sequence (
+<xref ref-type="fig" rid="figure3">Figure 3</xref>
+).
+<xref ref-type="table" rid="table1">Table 1</xref>
+shows the conditions fixed for each instrument. We used an “auto start” feature to enable smooth and immediate navigation between modules. Uniform randomization was done by defining a variable named “mod_6” in the Preliminary information instrument. This variable could take a value from 1-6 and represent one of the six possible orders of AD tasks shown in
+<xref ref-type="fig" rid="figure3">Figure 3</xref>
+. The completion of a task was monitored by a flag named “part
+<italic>i</italic>
+_complete”, where
+<italic>i</italic>
+is the task number that can take a value from 1-3 for mild, moderate, and severe AD, respectively. The following values were used for the flag status: Complete=2; Incomplete=0.
+</p>
+</list-item>
+<list-item>
+<p>
+Branching logic: used to (1) control the order of questions in the TTO task, (2) initiate logical error check pop-up texts (eg, in situations when users choose life with AD as being more desirable than a state of full health; see
+<xref ref-type="fig" rid="figure4">Figure 4</xref>
+), and (3) demonstrate users’ progression toward completing the survey.
+</p>
+</list-item>
+</list>
+<table-wrap position="float" id="table1">
+<label>Table 1</label>
+<caption>
+<p>Survey queue conditions for Alzheimer’s disease (AD) instruments.</p>
+</caption>
+<table width="1000" cellpadding="5" cellspacing="0" border="1" rules="groups" frame="hsides">
+<col width="500"/>
+<col width="500"/>
+<thead>
+<tr valign="top">
+<td>Instruments</td>
+<td>Conditions</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td rowspan="7">Mild AD</td>
+<td>WHEN</td>
+</tr>
+<tr valign="top">
+<td>Preliminary Information is complete</td>
+</tr>
+<tr valign="top">
+<td>AND</td>
+</tr>
+<tr valign="top">
+<td>
+([mod6
+<sup>a</sup>
+]<“3”) or ([mod6]=“3” and
+</td>
+</tr>
+<tr valign="top">
+<td>
+([part2_complete]+[part3_complete
+<sup>b</sup>
+]=“2”)) or (([mod6]=“4” or
+</td>
+</tr>
+<tr valign="top">
+<td>
+[mod6]=“6”) and ([part2_complete
+<sup>c</sup>
+]+[part3_complete]=“4”)) or
+</td>
+</tr>
+<tr valign="top">
+<td>([mod6]=“5” and ([part2_complete]+[part3_complete]=“2”))</td>
+</tr>
+<tr valign="top">
+<td rowspan="7">Moderate AD</td>
+<td>WHEN</td>
+</tr>
+<tr valign="top">
+<td>Preliminary Information is complete</td>
+</tr>
+<tr valign="top">
+<td>AND</td>
+</tr>
+<tr valign="top">
+<td>([mod6]=“3”) or ([mod6]=“4”) or ([mod6]=“1” and</td>
+</tr>
+<tr valign="top">
+<td>([part1_complete]+[part3_complete]=“2”)) or (([mod6]=“2” or</td>
+</tr>
+<tr valign="top">
+<td>[mod6]=“5”) and ([part3_complete]+[part1_complete]=“4”)) or</td>
+</tr>
+<tr valign="top">
+<td>
+([mod6]=“6” and ([part1_complete
+<sup>d</sup>
+]+[part3_complete]=“2”))
+</td>
+</tr>
+<tr valign="top">
+<td rowspan="7">Severe AD</td>
+<td>WHEN</td>
+</tr>
+<tr valign="top">
+<td>Preliminary Information is complete</td>
+</tr>
+<tr valign="top">
+<td>AND</td>
+</tr>
+<tr valign="top">
+<td>([mod6]=“5”) or ([mod6]=“6”) or ([mod6]=“2” and</td>
+</tr>
+<tr valign="top">
+<td>([part1_complete]+[part2_complete]=“2”)) or (([mod6]=“1” or</td>
+</tr>
+<tr valign="top">
+<td>[mod6]=“3”) and ([part2_complete]+[part1_complete]=“4”)) or</td>
+</tr>
+<tr valign="top">
+<td>([mod6]=“4” and ([part1_complete]+[part2_complete]=“2”))</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn id="table1fn1">
+<p>
+<sup>a</sup>
+Mod6: randomization variable.
+</p>
+</fn>
+<fn id="table1fn2">
+<p>
+<sup>b</sup>
+Severe AD task flag.
+</p>
+</fn>
+<fn id="table1fn3">
+<p>
+<sup>c</sup>
+Moderate AD task flag.
+</p>
+</fn>
+<fn id="table1fn4">
+<p>
+<sup>d</sup>
+Mild AD task flag.
+</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+<p>
+The end-user can get access to the survey through a public uniform resource locator (URL) or quick response (QR) code. Researchers can export the collected data from all instruments at once without being affected by the randomized order of the TTO tasks. Researchers can also export the data from specific instruments or fields separately (
+<xref ref-type="fig" rid="figure5">Figure 5</xref>
+).
+</p>
+<p>For building the TTO app, REDCap Version 6.12.0 was installed on the isysign webserver, which provides high security for hosted projects. We assigned different levels of data access rights to research team members, who had access to the project only through their individual usernames and passwords.</p>
+<p>
+One of the issues in the design of the TTO app was the possibility of incorrect data entry in ordinary text fields by the end-user. This problem was avoided using the
+<italic>validation</italic>
+option in each field. This option ensures end-users can enter only free-form text in predefined formats. Otherwise, a pop-up alert will inform the end-user of the correct format (
+<xref ref-type="fig" rid="figure6">Figure 6</xref>
+). This option is not only available for the format of the data but can also be used to minimize the problem of outliers by defining a valid range for numeric free-text fields such as age.
+</p>
+<p>Before publishing the app for pretesting, the research team tested the accuracy and reliability of the app’s iteration and randomization sequences. The team also reviewed the user interface from various perspectives, including consistency of appearance, clarity of cues, and simplicity of user engagement.</p>
+</sec>
+<sec>
+<title>Pretest</title>
+<p>Following the development of the software, members of the research team recruited a purposive sample of the general public to provide quality assurance feedback on the survey. These pretest participants were recruited from the researchers’ social networks (eg, friends, family, landlords). None of the pretest participants had an academic background. Each participant met with an interviewer for a one-on-one interview, during which the interviewer explained the purpose of the pretest, that is, to get feedback on the comprehensibility of the survey questions and the TTO task, as well as to assess the appearance and functionality of the online survey. The interviewers gave participants control over a laptop, and the participants completed the survey at their own pace.</p>
+<fig id="figure4" position="float">
+<label>Figure 4</label>
+<caption>
+<p>Screenshot of a logical error check for the pop-up text.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig4.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<fig id="figure5" position="float">
+<label>Figure 5</label>
+<caption>
+<p>Record export dashboard.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig5.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<fig id="figure6" position="float">
+<label>Figure 6</label>
+<caption>
+<p>Screenshot of a pop-up alert for incorrect free-text entry by end-user for email address.</p>
+</caption>
+<graphic xlink:href="formative_v2i1e3_fig6.jpg" alt-version="no" mimetype="image" position="float" xlink:type="simple"/>
+</fig>
+<p>
+The pretests followed the method of cognitive interviewing [
+<xref ref-type="bibr" rid="ref52">52</xref>
+]. As participants conducted the TTO task for the first AD health state, the interviewers asked them a series of scripted questions about whether they understood the description of the health state and the difference between Life A and Life B. After completing the first TTO task, the participants were asked to describe what they had just done using their own words. The interviewers encouraged participants to verbally express any thoughts that came to mind (ie, think aloud [
+<xref ref-type="bibr" rid="ref53">53</xref>
+]) as they performed the TTO task for the remaining two health states. After participants finished the survey, they were asked to comment on the similarities and differences between the three health state descriptions. The interviewers also elicited feedback about the following components of the survey: the visual aids used to depict Life A and Life B, the appearance of the webpages and fonts, and the wording used to articulate the questions. After aggregating and discussing the pretest feedback, the researchers revised the survey.
+</p>
+<p>We considered the pretest participants to be part of the research team. While these individuals had to complete the survey, they were told at the outset that their thoughts about the survey were of interest, not their responses to specific survey questions. The interviewers informed participants that their responses to specific survey questions would not be used in later research, nor would these responses be published anywhere.</p>
+</sec>
+<sec>
+<title>Ethics</title>
+<p>Research ethics approval was obtained from the University of Waterloo’s Office of Research Ethics (study #21461) and the Hamilton Integrated Research Ethics Board.</p>
+</sec>
+</sec>
+<sec sec-type="results">
+<title>Results</title>
+<p>We pretested the TTO app on 11 members of the general public who had not previously seen the app or responded to a TTO survey. Nine pretest participants were female, the median age of the 11 participants was 46 years (range 21-59 years), and none of the participants had a university degree. A member of the research team (GPM) and a student volunteer who was trained by the research team conducted the pretests. The pretest interviewers summarized their findings, which were discussed by the research team. The findings and discussion led to six modifications of the TTO app:</p>
+<list list-type="order">
+<list-item>
+<p>To enhance readability, the scenarios describing the mild, moderate, and severe AD health states were rewritten in bullet-point form, rather than in paragraph form.</p>
+</list-item>
+<list-item>
+<p>To assess whether participants’ responses to the TTO task might be influenced by their experiences with AD, a question about knowing someone with AD was inserted into the Preliminary information instrument.</p>
+</list-item>
+<list-item>
+<p>To help participants identify different parts of the survey, the scenarios were labeled as Description 1, 2, or 3.</p>
+</list-item>
+<list-item>
+<p>To enhance the empathy of the TTO task, a phrase comparing life with AD to a state worse than death was deleted from the app.</p>
+</list-item>
+<list-item>
+<p>To enrich the descriptions of Life A and Life B, the text was modified to indicate that death will occur from natural causes after the specified number of years spent in full health or with AD.</p>
+</list-item>
+<list-item>
+<p>To enhance comprehensibility, a phrase in the TTO response options was changed from “Life A and Life B are the same” to “Life A and Life B are equivalent”.</p>
+</list-item>
+</list>
+<p>
+The pretest participants reported understanding the substantive differences between scenarios. One participant found the need to value Life A in comparison to Life B as cognitively challenging, though this was not an issue with the online app but with her comprehension of the TTO task itself. The iterations functioned as described in
+<xref ref-type="app" rid="app1">Multimedia Appendix 1</xref>
+.
+</p>
+</sec>
+<sec sec-type="discussion">
+<title>Discussion</title>
+<sec>
+<title>Principal Considerations</title>
+<p>
+We will use the TTO app in a research study that examines whether the general public can provide proxy HRQoL estimates in place of persons with AD. Due to cognitive impairment, many persons with AD are unable to estimate their own HRQoL using instruments such as the EQ-5D [
+<xref ref-type="bibr" rid="ref54">54</xref>
+,
+<xref ref-type="bibr" rid="ref55">55</xref>
+]. Family caregivers sometimes act as proxies, but they often integrate their own life experiences (eg, the burdens and stresses of caregiving) into the proxy assessments and underestimate the HRQoL of their loved ones with AD [
+<xref ref-type="bibr" rid="ref56">56</xref>
+-
+<xref ref-type="bibr" rid="ref62">62</xref>
+]. To the best of our knowledge, no one has examined whether the general public can provide a better set of proxy HRQoL estimates than caregivers in AD.
+</p>
+<p>The TTO app is publicly available for other researchers to adapt to their own studies. As described above, existing CAPI software to conduct the TTO task is poorly documented in the literature and not readily available for researchers to access. Our app fills a gap for researchers who require a means of administering the TTO task in their studies.</p>
+<p>The pretest interviewers found the app worked well with regard to presenting all of the information necessary to conduct the TTO task, that is, the scenarios describing the three AD health states, the diagrammatic representations of Life A and Life B, and the questions about participants’ preferences for Life A or Life B. Additionally, the app worked quickly on a variety of public (eg, university) and private (eg, personal residence) wireless Internet connections. We did not notice any difference in performance on laptops running Windows, OS X, or Linux operating systems.</p>
+<p>The use of laptops provides flexibility in conducting interviews. Interviewers can turn the laptops over to participants and allow the TTO task to be performed in a completely self-administered fashion. Interviewers can also operate the point-and-click interface to record participants’ responses and help them navigate the task. This versatility is especially important when conducting research in populations that may be less familiar with technology (eg, seniors) or that may experience challenges in using technology (eg, persons with AD).</p>
+<p>
+The use of REDCap is timely given other developments in the HRQoL field. Recently, the EuroQoL Group released REDCap versions of the EQ-5D in over 50 languages to facilitate the collection of HRQoL data [
+<xref ref-type="bibr" rid="ref63">63</xref>
+].
+</p>
+<p>
+The TTO app described in this manuscript will facilitate the conduct of high-quality cost-utility analyses, which are undertaken to assess the costs and benefits of new health technologies. The health utility scores generated from the TTO task are an essential ingredient of these analyses. Cost-utility analyses are increasing in frequency and can influence public sector treatment reimbursement decisions and health program priority setting [
+<xref ref-type="bibr" rid="ref64">64</xref>
+].
+</p>
+</sec>
+<sec>
+<title>Limitations</title>
+<p>
+The pretest sample was one of convenience and may therefore be unrepresentative of average members of the general public. However, the pretest specifically excluded people with academic backgrounds to enable us to collect feedback on the app from individuals who would reflect a variety of lay opinions. Also, cognitive interviewing methods do not require the recruitment of representative samples nor do they specifically call for the use of formal qualitative analytical approaches [
+<xref ref-type="bibr" rid="ref65">65</xref>
+,
+<xref ref-type="bibr" rid="ref66">66</xref>
+]. In this research, we did not focus on analyzing pretest participants’ specific health utilities because the objective of the work was to develop and test an online TTO app. We have already shown in previous research that members of the general public can differentiate between AD health states [
+<xref ref-type="bibr" rid="ref16">16</xref>
+].
+</p>
+<p>
+The TTO app was developed to meet the needs of a specific research protocol. Therefore, the app does not contain multiple means of eliciting health utilities (eg, visual analogue scale or standard gamble approach [
+<xref ref-type="bibr" rid="ref67">67</xref>
+]) nor does it include multiple methods of iterating between Life A and Life B (eg, titration, bisection [
+<xref ref-type="bibr" rid="ref3">3</xref>
+]). Some users may find REDCap’s graphic capabilities uncustomizable to their needs.
+</p>
+<p>The TTO app is still preliminary and may undergo further refinement as we move forward with our study of general public proxy HRQoL estimates in AD. However, our work demonstrates that researchers can easily use REDCap to computerize the TTO task and create a useful online CAPI app.</p>
+</sec>
+<sec>
+<title>Conclusions</title>
+<p>We developed an online app to administer the TTO task. Other researchers may access and alter the app for their own research purposes. Our app fills an operational gap in eliciting health utility scores because existing TTO apps are poorly documented and inaccessible to researchers. Researchers may contact us for information on how to use the app in their projects.</p>
+</sec>
+</sec>
+</body>
+<back>
+<app-group>
+<app id="app1">
+<title>Multimedia Appendix 1</title>
+<p>Time trade-off iteration.</p>
+<media xlink:href="formative_v2i1e3_app1.pdf" xlink:title="PDF File (Adobe PDF File), 25KB"/>
+</app>
+<app id="app2">
+<title>Multimedia Appendix 2</title>
+<p>TTO-CAPI XML file.</p>
+<media xlink:href="formative_v2i1e3_app2.pdf" xlink:title="PDF File (Adobe PDF File), 10MB"/>
+</app>
+<app id="app3">
+<title>Multimedia Appendix 3</title>
+<p>TTO-CAPI installation on local REDCapTM server (manual).</p>
+<media xlink:href="formative_v2i1e3_app3.pdf" xlink:title="PDF File (Adobe PDF File), 189KB"/>
+</app>
+</app-group>
+<glossary>
+<title>Abbreviations</title>
+<def-list>
+<def-item>
+<term id="abb1">AD</term>
+<def>
+<p>Alzheimer’s disease</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb2">CAPI</term>
+<def>
+<p>computer-assisted personal interview</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb3">EQ-5D</term>
+<def>
+<p>EuroQol 5-dimension</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb4">EQ-5D-5L</term>
+<def>
+<p>EuroQol 5-dimension 5-level</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb5">EQ-VT</term>
+<def>
+<p>EuroQol Valuation Technology</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb6">HRQoL</term>
+<def>
+<p>health-related quality of life</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb7">REDCap</term>
+<def>
+<p>Research Electronic Data Capture</p>
+</def>
+</def-item>
+<def-item>
+<term id="abb8">TTO</term>
+<def>
+<p>time trade-off</p>
+</def>
+</def-item>
+</def-list>
+</glossary>
+<ack>
+<p>We wish to thank the pretest participants for their helpful comments on the TTO survey and also thank Vanessa De Rubeis for administering pretest interviews.</p>
+<p>The Canadian Institutes of Health Research funded this study (IAO - 126567).</p>
+</ack>
+<fn-group>
+<fn fn-type="con">
+<p>MO and FX conceived the purpose of the TTO survey and supervised the CAPI software design. AS programmed the TTO survey and performed ongoing technical tests and bug fixing. GPM and AS assessed the initial suitability of the REDCap app. GPM and XJ reviewed the CAPI software for functionality (eg, randomization, skip patterns). GPM administered pretest interviews. MO and FX alpha tested the software. MO led the writing of the manuscript, and all authors contributed to the writing of the manuscript. All authors read and approved the final manuscript.</p>
+</fn>
+<fn fn-type="conflict">
+<p>None declared.</p>
+</fn>
+</fn-group>
+<ref-list>
+<ref id="ref1">
+<label>1</label>
+<nlm-citation citation-type="web">
+<source>International Society for Quality of Life Research</source>
+<access-date>2017-06-14</access-date>
+<comment>
+Health-Related Quality of Life Research
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.isoqol.org/about-isoqol/what-is-health-related-quality-of-life-research">http://www.isoqol.org/about-isoqol/what-is-health-related-quality-of-life-research</ext-link>
+<ext-link ext-link-type="webcite" xlink:href="6rCZpqYlP"/>
+</comment>
+</nlm-citation>
+</ref>
+<ref id="ref2">
+<label>2</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Drummond</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Sculpher</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Claxton</surname>
+<given-names>K</given-names>
+</name>
+</person-group>
+<source>Methods for the Economic Evaluation of Health Care Programmes. Fourth Edition</source>
+<year>2015</year>
+<publisher-loc>Oxford, UK</publisher-loc>
+<publisher-name>Oxford University Press</publisher-name>
+</nlm-citation>
+</ref>
+<ref id="ref3">
+<label>3</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Rand-Hendriksen</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Shah</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Ramos-Goñi</surname>
+<given-names>JM</given-names>
+</name>
+<name name-style="western">
+<surname>Luo</surname>
+<given-names>N</given-names>
+</name>
+</person-group>
+<article-title>EuroQol Protocols for Time Trade-Off Valuation of Health Outcomes</article-title>
+<source>Pharmacoeconomics</source>
+<year>2016</year>
+<month>10</month>
+<volume>34</volume>
+<issue>10</issue>
+<fpage>993</fpage>
+<lpage>1004</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/27084198"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s40273-016-0404-1</pub-id>
+<pub-id pub-id-type="medline">27084198</pub-id>
+<pub-id pub-id-type="pii">10.1007/s40273-016-0404-1</pub-id>
+<pub-id pub-id-type="pmcid">PMC5023738</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref4">
+<label>4</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Torrance</surname>
+<given-names>GW</given-names>
+</name>
+<name name-style="western">
+<surname>Thomas</surname>
+<given-names>WH</given-names>
+</name>
+<name name-style="western">
+<surname>Sackett</surname>
+<given-names>DL</given-names>
+</name>
+</person-group>
+<article-title>A utility maximization model for evaluation of health care programs</article-title>
+<source>Health Serv Res</source>
+<year>1972</year>
+<volume>7</volume>
+<issue>2</issue>
+<fpage>118</fpage>
+<lpage>133</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/5044699"/>
+</comment>
+<pub-id pub-id-type="medline">5044699</pub-id>
+<pub-id pub-id-type="pmcid">PMC1067402</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref5">
+<label>5</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Robinson</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Spencer</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>Exploring challenges to TTO utilities: valuing states worse than dead</article-title>
+<source>Health Econ</source>
+<year>2006</year>
+<month>04</month>
+<volume>15</volume>
+<issue>4</issue>
+<fpage>393</fpage>
+<lpage>402</lpage>
+<pub-id pub-id-type="doi">10.1002/hec.1069</pub-id>
+<pub-id pub-id-type="medline">16389652</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref6">
+<label>6</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Janssen</surname>
+<given-names>BMF</given-names>
+</name>
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Versteegh</surname>
+<given-names>MM</given-names>
+</name>
+<name name-style="western">
+<surname>Stolk</surname>
+<given-names>EA</given-names>
+</name>
+</person-group>
+<article-title>Introducing the composite time trade-off: a test of feasibility and face validity</article-title>
+<source>Eur J Health Econ</source>
+<year>2013</year>
+<month>07</month>
+<volume>14 Suppl 1</volume>
+<fpage>S5</fpage>
+<lpage>13</lpage>
+<pub-id pub-id-type="doi">10.1007/s10198-013-0503-2</pub-id>
+<pub-id pub-id-type="medline">23900660</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref7">
+<label>7</label>
+<nlm-citation citation-type="web">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Gudex</surname>
+<given-names>C</given-names>
+</name>
+</person-group>
+<source>Time Trade-off User Manual: Props and Self-Completion Methods</source>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.york.ac.uk/media/che/documents/papers/occasionalpapers/CHE">http://www.york.ac.uk/media/che/documents/papers/occasionalpapers/CHE</ext-link>
+<ext-link ext-link-type="webcite" xlink:href="6rCa10DzQ"/>
+</comment>
+</nlm-citation>
+</ref>
+<ref id="ref8">
+<label>8</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Sumner</surname>
+<given-names>W</given-names>
+</name>
+<name name-style="western">
+<surname>Nease</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Littenberg</surname>
+<given-names>B</given-names>
+</name>
+</person-group>
+<article-title>U-titer: a utility assessment tool</article-title>
+<source>Proc Annu Symp Comput Appl Med Care</source>
+<year>1991</year>
+<fpage>701</fpage>
+<lpage>705</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/1807694"/>
+</comment>
+<pub-id pub-id-type="medline">1807694</pub-id>
+<pub-id pub-id-type="pmcid">PMC2247621</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref9">
+<label>9</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Lenert</surname>
+<given-names>LA</given-names>
+</name>
+<name name-style="western">
+<surname>Sturley</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Watson</surname>
+<given-names>ME</given-names>
+</name>
+</person-group>
+<article-title>iMPACT3: Internet-based development and administration of utility elicitation protocols</article-title>
+<source>Med Decis Making</source>
+<year>2002</year>
+<volume>22</volume>
+<issue>6</issue>
+<fpage>464</fpage>
+<lpage>474</lpage>
+<pub-id pub-id-type="doi">10.1177/0272989X02238296</pub-id>
+<pub-id pub-id-type="medline">12458976</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref10">
+<label>10</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>NJ</given-names>
+</name>
+<name name-style="western">
+<surname>Krabbe</surname>
+<given-names>PFM</given-names>
+</name>
+</person-group>
+<article-title>The development of new research methods for the valuation of EQ-5D-5L</article-title>
+<source>Eur J Health Econ</source>
+<year>2013</year>
+<month>07</month>
+<volume>14 Suppl 1</volume>
+<fpage>S1</fpage>
+<lpage>3</lpage>
+<pub-id pub-id-type="doi">10.1007/s10198-013-0502-3</pub-id>
+<pub-id pub-id-type="medline">23900659</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref11">
+<label>11</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Shah</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Mulhern</surname>
+<given-names>B</given-names>
+</name>
+<name name-style="western">
+<surname>Longworth</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Janssen</surname>
+<given-names>MFB</given-names>
+</name>
+</person-group>
+<article-title>An Empirical Study of Two Alternative Comparators for Use in Time Trade-Off Studies</article-title>
+<source>Value Health</source>
+<year>2016</year>
+<month>01</month>
+<volume>19</volume>
+<issue>1</issue>
+<fpage>53</fpage>
+<lpage>59</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(15)05085-8"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2015.10.012</pub-id>
+<pub-id pub-id-type="medline">26797236</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(15)05085-8</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref12">
+<label>12</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>NJ</given-names>
+</name>
+<name name-style="western">
+<surname>van</surname>
+<given-names>HB</given-names>
+</name>
+<name name-style="western">
+<surname>Krabbe</surname>
+<given-names>PFM</given-names>
+</name>
+<name name-style="western">
+<surname>de</surname>
+<given-names>CF</given-names>
+</name>
+</person-group>
+<article-title>A program of methodological research to arrive at the new international EQ-5D-5L valuation protocol</article-title>
+<source>Value Health</source>
+<year>2014</year>
+<month>06</month>
+<volume>17</volume>
+<issue>4</issue>
+<fpage>445</fpage>
+<lpage>453</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(14)01829-4"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2014.04.002</pub-id>
+<pub-id pub-id-type="medline">24969006</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(14)01829-4</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref13">
+<label>13</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Herdman</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Gudex</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Lloyd</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Janssen</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Kind</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Parkin</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Bonsel</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Badia</surname>
+<given-names>X</given-names>
+</name>
+</person-group>
+<article-title>Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L)</article-title>
+<source>Qual Life Res</source>
+<year>2011</year>
+<month>12</month>
+<volume>20</volume>
+<issue>10</issue>
+<fpage>1727</fpage>
+<lpage>1736</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/21479777"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s11136-011-9903-x</pub-id>
+<pub-id pub-id-type="medline">21479777</pub-id>
+<pub-id pub-id-type="pmcid">PMC3220807</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref14">
+<label>14</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<collab>EuroQol Group</collab>
+</person-group>
+<article-title>EuroQol--a new facility for the measurement of health-related quality of life</article-title>
+<source>Health Policy</source>
+<year>1990</year>
+<month>12</month>
+<volume>16</volume>
+<issue>3</issue>
+<fpage>199</fpage>
+<lpage>208</lpage>
+<pub-id pub-id-type="medline">10109801</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref15">
+<label>15</label>
+<nlm-citation citation-type="web">
+<person-group person-group-type="author">
+<collab>EuroQol Group</collab>
+</person-group>
+<source>What is EQ-5D?</source>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.euroqol.org/home.html">http://www.euroqol.org/home.html</ext-link>
+<ext-link ext-link-type="webcite" xlink:href="6rCa9lDUi"/>
+</comment>
+</nlm-citation>
+</ref>
+<ref id="ref16">
+<label>16</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Oremus</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Xie</surname>
+<given-names>F</given-names>
+</name>
+<name name-style="western">
+<surname>Pullenayegum</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>Gaebel</surname>
+<given-names>K</given-names>
+</name>
+</person-group>
+<article-title>Can the general public use vignettes to discriminate between Alzheimer's disease health states?</article-title>
+<source>BMC Geriatr</source>
+<year>2016</year>
+<month>02</month>
+<day>03</day>
+<volume>16</volume>
+<fpage>36</fpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-016-0207-4"/>
+</comment>
+<pub-id pub-id-type="doi">10.1186/s12877-016-0207-4</pub-id>
+<pub-id pub-id-type="medline">26842500</pub-id>
+<pub-id pub-id-type="pii">10.1186/s12877-016-0207-4</pub-id>
+<pub-id pub-id-type="pmcid">PMC4738787</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref17">
+<label>17</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Ramos-Goñi</surname>
+<given-names>JM</given-names>
+</name>
+<name name-style="western">
+<surname>Pinto-Prades</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Cabasés</surname>
+<given-names>JM</given-names>
+</name>
+<name name-style="western">
+<surname>Serrano-Aguilar</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Rivero-Arias</surname>
+<given-names>O</given-names>
+</name>
+</person-group>
+<article-title>Valuation and Modeling of EQ-5D-5L Health States Using a Hybrid Approach</article-title>
+<source>Med Care</source>
+<year>2017</year>
+<month>07</month>
+<volume>55</volume>
+<issue>7</issue>
+<fpage>e51</fpage>
+<lpage>e58</lpage>
+<pub-id pub-id-type="doi">10.1097/MLR.0000000000000283</pub-id>
+<pub-id pub-id-type="medline">25521503</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref18">
+<label>18</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Sayah</surname>
+<given-names>FA</given-names>
+</name>
+<name name-style="western">
+<surname>Bansback</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Bryan</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Ohinmaa</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Poissant</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Pullenayegum</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>Xie</surname>
+<given-names>F</given-names>
+</name>
+<name name-style="western">
+<surname>Johnson</surname>
+<given-names>JA</given-names>
+</name>
+</person-group>
+<article-title>Determinants of time trade-off valuations for EQ-5D-5L health states: data from the Canadian EQ-5D-5L valuation study</article-title>
+<source>Qual Life Res</source>
+<year>2016</year>
+<month>12</month>
+<volume>25</volume>
+<issue>7</issue>
+<fpage>1679</fpage>
+<lpage>1685</lpage>
+<pub-id pub-id-type="doi">10.1007/s11136-015-1203-4</pub-id>
+<pub-id pub-id-type="medline">26659899</pub-id>
+<pub-id pub-id-type="pii">10.1007/s11136-015-1203-4</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref19">
+<label>19</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Shah</surname>
+<given-names>KK</given-names>
+</name>
+<name name-style="western">
+<surname>Lloyd</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>NJ</given-names>
+</name>
+</person-group>
+<article-title>One-to-one versus group setting for conducting computer-assisted TTO studies: findings from pilot studies in England and the Netherlands</article-title>
+<source>Eur J Health Econ</source>
+<year>2013</year>
+<month>07</month>
+<volume>14 Suppl 1</volume>
+<fpage>S65</fpage>
+<lpage>73</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/23900666"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s10198-013-0509-9</pub-id>
+<pub-id pub-id-type="medline">23900666</pub-id>
+<pub-id pub-id-type="pmcid">PMC3728432</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref20">
+<label>20</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Li</surname>
+<given-names>MH</given-names>
+</name>
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>GG</given-names>
+</name>
+<name name-style="western">
+<surname>Thumboo</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Luo</surname>
+<given-names>N</given-names>
+</name>
+</person-group>
+<article-title>Do Chinese have similar health-state preferences? A comparison of mainland Chinese and Singaporean Chinese</article-title>
+<source>Eur J Health Econ</source>
+<year>2015</year>
+<month>11</month>
+<volume>16</volume>
+<issue>8</issue>
+<fpage>857</fpage>
+<lpage>863</lpage>
+<pub-id pub-id-type="doi">10.1007/s10198-014-0635-z</pub-id>
+<pub-id pub-id-type="medline">25260384</pub-id>
+<pub-id pub-id-type="pii">10.1007/s10198-014-0635-z</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref21">
+<label>21</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Luo</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Li</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Stolk</surname>
+<given-names>EA</given-names>
+</name>
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>NJ</given-names>
+</name>
+</person-group>
+<article-title>The effects of lead time and visual aids in TTO valuation: a study of the EQ-VT framework</article-title>
+<source>Eur J Health Econ</source>
+<year>2013</year>
+<month>07</month>
+<volume>14 Suppl 1</volume>
+<fpage>S15</fpage>
+<lpage>24</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/23900661"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s10198-013-0504-1</pub-id>
+<pub-id pub-id-type="medline">23900661</pub-id>
+<pub-id pub-id-type="pmcid">PMC3728439</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref22">
+<label>22</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Mulhern</surname>
+<given-names>B</given-names>
+</name>
+<name name-style="western">
+<surname>Bansback</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Brazier</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Buckingham</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Cairns</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Dolan</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Hole</surname>
+<given-names>AR</given-names>
+</name>
+<name name-style="western">
+<surname>Kavetsos</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Longworth</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Rowen</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Tsuchiya</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>Preparatory study for the revaluation of the EQ-5D tariff: methodology report</article-title>
+<source>Health Technol Assess</source>
+<year>2014</year>
+<month>02</month>
+<volume>18</volume>
+<issue>12</issue>
+<fpage>1</fpage>
+<lpage>191</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://dx.doi.org/10.3310/hta18120"/>
+</comment>
+<pub-id pub-id-type="doi">10.3310/hta18120</pub-id>
+<pub-id pub-id-type="medline">24568945</pub-id>
+<pub-id pub-id-type="pmcid">PMC4781204</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref23">
+<label>23</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Marcellusi</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Capone</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Favato</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Mennini</surname>
+<given-names>FS</given-names>
+</name>
+<name name-style="western">
+<surname>Baio</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Haeussler</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Bononi</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>Health utilities lost and risk factors associated with HPV-induced diseases in men and women: the HPV Italian collaborative study group</article-title>
+<source>Clin Ther</source>
+<year>2015</year>
+<month>01</month>
+<day>01</day>
+<volume>37</volume>
+<issue>1</issue>
+<fpage>156</fpage>
+<lpage>167</lpage>
+<pub-id pub-id-type="doi">10.1016/j.clinthera.2014.11.002</pub-id>
+<pub-id pub-id-type="medline">25487083</pub-id>
+<pub-id pub-id-type="pii">S0149-2918(14)00734-6</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref24">
+<label>24</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Scalone</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Cortesi</surname>
+<given-names>PA</given-names>
+</name>
+<name name-style="western">
+<surname>Ciampichini</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Belisari</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>D'Angiolella</surname>
+<given-names>LS</given-names>
+</name>
+<name name-style="western">
+<surname>Cesana</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Mantovani</surname>
+<given-names>LG</given-names>
+</name>
+</person-group>
+<article-title>Italian population-based values of EQ-5D health states</article-title>
+<source>Value Health</source>
+<year>2013</year>
+<volume>16</volume>
+<issue>5</issue>
+<fpage>814</fpage>
+<lpage>822</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(13)01807-X"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2013.04.008</pub-id>
+<pub-id pub-id-type="medline">23947975</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(13)01807-X</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref25">
+<label>25</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Wittrup-Jensen</surname>
+<given-names>KU</given-names>
+</name>
+<name name-style="western">
+<surname>Lauridsen</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Gudex</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Pedersen</surname>
+<given-names>KM</given-names>
+</name>
+</person-group>
+<article-title>Generation of a Danish TTO value set for EQ-5D health states</article-title>
+<source>Scand J Public Health</source>
+<year>2009</year>
+<month>07</month>
+<volume>37</volume>
+<issue>5</issue>
+<fpage>459</fpage>
+<lpage>466</lpage>
+<pub-id pub-id-type="doi">10.1177/1403494809105287</pub-id>
+<pub-id pub-id-type="medline">19411320</pub-id>
+<pub-id pub-id-type="pii">1403494809105287</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref26">
+<label>26</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Mulhern</surname>
+<given-names>B</given-names>
+</name>
+<name name-style="western">
+<surname>Shah</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Janssen</surname>
+<given-names>MFB</given-names>
+</name>
+<name name-style="western">
+<surname>Longworth</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Ibbotson</surname>
+<given-names>R</given-names>
+</name>
+</person-group>
+<article-title>Valuing Health Using Time Trade-Off and Discrete Choice Experiment Methods: Does Dimension Order Impact on Health State Values?</article-title>
+<source>Value Health</source>
+<year>2016</year>
+<volume>19</volume>
+<issue>2</issue>
+<fpage>210</fpage>
+<lpage>217</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(15)05125-6"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2015.11.005</pub-id>
+<pub-id pub-id-type="medline">27021755</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(15)05125-6</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref27">
+<label>27</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Schmitt</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Meurer</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Klon</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Frick</surname>
+<given-names>KD</given-names>
+</name>
+</person-group>
+<article-title>Assessment of health state utilities of controlled and uncontrolled psoriasis and atopic eczema: a population-based study</article-title>
+<source>Br J Dermatol</source>
+<year>2008</year>
+<month>02</month>
+<volume>158</volume>
+<issue>2</issue>
+<fpage>351</fpage>
+<lpage>359</lpage>
+<pub-id pub-id-type="doi">10.1111/j.1365-2133.2007.08354.x</pub-id>
+<pub-id pub-id-type="medline">18070214</pub-id>
+<pub-id pub-id-type="pii">BJD8354</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref28">
+<label>28</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Mennini</surname>
+<given-names>FS</given-names>
+</name>
+<name name-style="western">
+<surname>Panatto</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Marcellusi</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Cristoforoni</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>De</surname>
+<given-names>VR</given-names>
+</name>
+<name name-style="western">
+<surname>Di</surname>
+<given-names>CE</given-names>
+</name>
+<name name-style="western">
+<surname>Ferrandina</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Petrillo</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Sasso</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Ricci</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Trivellizzi</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Capone</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Scambia</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Gasparini</surname>
+<given-names>R</given-names>
+</name>
+</person-group>
+<article-title>Time trade-off procedure for measuring health utilities loss with human papillomavirus-induced diseases: a multicenter, retrospective, observational pilot study in Italy</article-title>
+<source>Clin Ther</source>
+<year>2011</year>
+<month>08</month>
+<volume>33</volume>
+<issue>8</issue>
+<fpage>1084</fpage>
+<lpage>1095.e4</lpage>
+<pub-id pub-id-type="doi">10.1016/j.clinthera.2011.06.012</pub-id>
+<pub-id pub-id-type="medline">21788076</pub-id>
+<pub-id pub-id-type="pii">S0149-2918(11)00423-1</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref29">
+<label>29</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Goodwin</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>Green</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Spencer</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>Estimating a Preference-Based Index for an Eight-Dimensional Health State Classification System for Multiple Sclerosis</article-title>
+<source>Value Health</source>
+<year>2015</year>
+<month>12</month>
+<volume>18</volume>
+<issue>8</issue>
+<fpage>1025</fpage>
+<lpage>1036</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(15)05072-X"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2015.10.004</pub-id>
+<pub-id pub-id-type="medline">26686787</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(15)05072-X</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref30">
+<label>30</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Norman</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>King</surname>
+<given-names>MT</given-names>
+</name>
+<name name-style="western">
+<surname>Clarke</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Viney</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Cronin</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Street</surname>
+<given-names>D</given-names>
+</name>
+</person-group>
+<article-title>Does mode of administration matter? Comparison of online and face-to-face administration of a time trade-off task</article-title>
+<source>Qual Life Res</source>
+<year>2010</year>
+<month>05</month>
+<volume>19</volume>
+<issue>4</issue>
+<fpage>499</fpage>
+<lpage>508</lpage>
+<pub-id pub-id-type="doi">10.1007/s11136-010-9609-5</pub-id>
+<pub-id pub-id-type="medline">20174998</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref31">
+<label>31</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Prosser</surname>
+<given-names>LA</given-names>
+</name>
+<name name-style="western">
+<surname>Payne</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Rusinak</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Shi</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Uyeki</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Messonnier</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>Valuing health across the lifespan: health state preferences for seasonal influenza illnesses in patients of different ages</article-title>
+<source>Value Health</source>
+<year>2011</year>
+<month>01</month>
+<volume>14</volume>
+<issue>1</issue>
+<fpage>135</fpage>
+<lpage>143</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://linkinghub.elsevier.com/retrieve/pii/S1098-3015(10)00027-6"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2010.10.026</pub-id>
+<pub-id pub-id-type="medline">21211495</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(10)00027-6</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref32">
+<label>32</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Robinson</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Gyrd-Hansen</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Bacon</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Baker</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Pennington</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Donaldson</surname>
+<given-names>C</given-names>
+</name>
+<collab>EuroVaQ Team</collab>
+</person-group>
+<article-title>Estimating a WTP-based value of a QALY: the 'chained' approach</article-title>
+<source>Soc Sci Med</source>
+<year>2013</year>
+<month>09</month>
+<volume>92</volume>
+<fpage>92</fpage>
+<lpage>104</lpage>
+<pub-id pub-id-type="doi">10.1016/j.socscimed.2013.05.013</pub-id>
+<pub-id pub-id-type="medline">23849283</pub-id>
+<pub-id pub-id-type="pii">S0277-9536(13)00287-6</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref33">
+<label>33</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Szende</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Brazier</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Schaefer</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Deuson</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Isitt</surname>
+<given-names>JJ</given-names>
+</name>
+<name name-style="western">
+<surname>Vyas</surname>
+<given-names>P</given-names>
+</name>
+</person-group>
+<article-title>Measurement of utility values in the UK for health states related to immune thrombocytopenic purpura</article-title>
+<source>Curr Med Res Opin</source>
+<year>2010</year>
+<month>08</month>
+<volume>26</volume>
+<issue>8</issue>
+<fpage>1893</fpage>
+<lpage>1903</lpage>
+<pub-id pub-id-type="doi">10.1185/03007995.2010.494126</pub-id>
+<pub-id pub-id-type="medline">20553121</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref34">
+<label>34</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Viney</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Norman</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Brazier</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Cronin</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>King</surname>
+<given-names>MT</given-names>
+</name>
+<name name-style="western">
+<surname>Ratcliffe</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Street</surname>
+<given-names>D</given-names>
+</name>
+</person-group>
+<article-title>An Australian discrete choice experiment to value eq-5d health states</article-title>
+<source>Health Econ</source>
+<year>2014</year>
+<month>06</month>
+<volume>23</volume>
+<issue>6</issue>
+<fpage>729</fpage>
+<lpage>742</lpage>
+<pub-id pub-id-type="doi">10.1002/hec.2953</pub-id>
+<pub-id pub-id-type="medline">23765787</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref35">
+<label>35</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Evans</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Jensen</surname>
+<given-names>HH</given-names>
+</name>
+<name name-style="western">
+<surname>Bøgelund</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Gundgaard</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Chubb</surname>
+<given-names>B</given-names>
+</name>
+<name name-style="western">
+<surname>Khunti</surname>
+<given-names>K</given-names>
+</name>
+</person-group>
+<article-title>Flexible insulin dosing improves health-related quality-of-life (HRQoL): a time trade-off survey</article-title>
+<source>J Med Econ</source>
+<year>2013</year>
+<month>11</month>
+<volume>16</volume>
+<issue>11</issue>
+<fpage>1357</fpage>
+<lpage>1365</lpage>
+<pub-id pub-id-type="doi">10.3111/13696998.2013.846262</pub-id>
+<pub-id pub-id-type="medline">24111563</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref36">
+<label>36</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Evans</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Khunti</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Mamdani</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Galbo-Jørgensen</surname>
+<given-names>CB</given-names>
+</name>
+<name name-style="western">
+<surname>Gundgaard</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Bøgelund</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Harris</surname>
+<given-names>S</given-names>
+</name>
+</person-group>
+<article-title>Health-related quality of life associated with daytime and nocturnal hypoglycaemic events: a time trade-off survey in five countries</article-title>
+<source>Health Qual Life Outcomes</source>
+<year>2013</year>
+<month>06</month>
+<day>03</day>
+<volume>11</volume>
+<fpage>90</fpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://hqlo.biomedcentral.com/articles/10.1186/1477-7525-11-90"/>
+</comment>
+<pub-id pub-id-type="doi">10.1186/1477-7525-11-90</pub-id>
+<pub-id pub-id-type="medline">23731777</pub-id>
+<pub-id pub-id-type="pii">1477-7525-11-90</pub-id>
+<pub-id pub-id-type="pmcid">PMC3679729</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref37">
+<label>37</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Hutchins</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Viera</surname>
+<given-names>AJ</given-names>
+</name>
+<name name-style="western">
+<surname>Sheridan</surname>
+<given-names>SL</given-names>
+</name>
+<name name-style="western">
+<surname>Pignone</surname>
+<given-names>MP</given-names>
+</name>
+</person-group>
+<article-title>Quantifying the utility of taking pills for cardiovascular prevention</article-title>
+<source>Circ Cardiovasc Qual Outcomes</source>
+<year>2015</year>
+<month>03</month>
+<volume>8</volume>
+<issue>2</issue>
+<fpage>155</fpage>
+<lpage>163</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://circoutcomes.ahajournals.org/cgi/pmidlookup?view=long&pmid=25648463"/>
+</comment>
+<pub-id pub-id-type="doi">10.1161/CIRCOUTCOMES.114.001240</pub-id>
+<pub-id pub-id-type="medline">25648463</pub-id>
+<pub-id pub-id-type="pii">CIRCOUTCOMES.114.001240</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref38">
+<label>38</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Lieu</surname>
+<given-names>TA</given-names>
+</name>
+<name name-style="western">
+<surname>Ortega-Sanchez</surname>
+<given-names>I</given-names>
+</name>
+<name name-style="western">
+<surname>Ray</surname>
+<given-names>GT</given-names>
+</name>
+<name name-style="western">
+<surname>Rusinak</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Yih</surname>
+<given-names>WK</given-names>
+</name>
+<name name-style="western">
+<surname>Choo</surname>
+<given-names>PW</given-names>
+</name>
+<name name-style="western">
+<surname>Shui</surname>
+<given-names>I</given-names>
+</name>
+<name name-style="western">
+<surname>Kleinman</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Harpaz</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Prosser</surname>
+<given-names>LA</given-names>
+</name>
+</person-group>
+<article-title>Community and patient values for preventing herpes zoster</article-title>
+<source>Pharmacoeconomics</source>
+<year>2008</year>
+<volume>26</volume>
+<issue>3</issue>
+<fpage>235</fpage>
+<lpage>249</lpage>
+<pub-id pub-id-type="medline">18282017</pub-id>
+<pub-id pub-id-type="pii">2636</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref39">
+<label>39</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Lieu</surname>
+<given-names>TA</given-names>
+</name>
+<name name-style="western">
+<surname>Ray</surname>
+<given-names>GT</given-names>
+</name>
+<name name-style="western">
+<surname>Ortega-Sanchez</surname>
+<given-names>IR</given-names>
+</name>
+<name name-style="western">
+<surname>Kleinman</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Rusinak</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Prosser</surname>
+<given-names>LA</given-names>
+</name>
+</person-group>
+<article-title>Willingness to pay for a QALY based on community member and patient preferences for temporary health states associated with herpes zoster</article-title>
+<source>Pharmacoeconomics</source>
+<year>2009</year>
+<volume>27</volume>
+<issue>12</issue>
+<fpage>1005</fpage>
+<lpage>1016</lpage>
+<pub-id pub-id-type="doi">10.2165/11314000-000000000-00000</pub-id>
+<pub-id pub-id-type="medline">19908925</pub-id>
+<pub-id pub-id-type="pii">4</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref40">
+<label>40</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Lloyd</surname>
+<given-names>JC</given-names>
+</name>
+<name name-style="western">
+<surname>Yen</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Pietrobon</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Wiener</surname>
+<given-names>JS</given-names>
+</name>
+<name name-style="western">
+<surname>Ross</surname>
+<given-names>SS</given-names>
+</name>
+<name name-style="western">
+<surname>Kokorowski</surname>
+<given-names>PJ</given-names>
+</name>
+<name name-style="western">
+<surname>Nelson</surname>
+<given-names>CP</given-names>
+</name>
+<name name-style="western">
+<surname>Routh</surname>
+<given-names>JC</given-names>
+</name>
+</person-group>
+<article-title>Estimating utility values for vesicoureteral reflux in the general public using an online tool</article-title>
+<source>J Pediatr Urol</source>
+<year>2014</year>
+<month>12</month>
+<volume>10</volume>
+<issue>6</issue>
+<fpage>1026</fpage>
+<lpage>1031</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/24766856"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jpurol.2014.02.014</pub-id>
+<pub-id pub-id-type="medline">24766856</pub-id>
+<pub-id pub-id-type="pii">S1477-5131(14)00099-0</pub-id>
+<pub-id pub-id-type="pmcid">PMC4185270</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref41">
+<label>41</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Olofsson</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Norrlid</surname>
+<given-names>H</given-names>
+</name>
+<name name-style="western">
+<surname>Persson</surname>
+<given-names>U</given-names>
+</name>
+</person-group>
+<article-title>Preferences for improvements in attributes associated with basal insulin: a time trade-off and willingness-to-pay survey of a diabetic and non-diabetic population in Sweden</article-title>
+<source>J Med Econ</source>
+<year>2016</year>
+<month>10</month>
+<volume>19</volume>
+<issue>10</issue>
+<fpage>945</fpage>
+<lpage>958</lpage>
+<pub-id pub-id-type="doi">10.1080/13696998.2016.1187152</pub-id>
+<pub-id pub-id-type="medline">27149402</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref42">
+<label>42</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Polster</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Zanutto</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>McDonald</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Conner</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Hammer</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>A comparison of preferences for two GLP-1 products--liraglutide and exenatide--for the treatment of type 2 diabetes</article-title>
+<source>J Med Econ</source>
+<year>2010</year>
+<volume>13</volume>
+<issue>4</issue>
+<fpage>655</fpage>
+<lpage>661</lpage>
+<pub-id pub-id-type="doi">10.3111/13696998.2010.529377</pub-id>
+<pub-id pub-id-type="medline">21034377</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref43">
+<label>43</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Prosser</surname>
+<given-names>LA</given-names>
+</name>
+<name name-style="western">
+<surname>Payne</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Rusinak</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Shi</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Messonnier</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>Using a discrete choice experiment to elicit time trade-off and willingness-to-pay amounts for influenza health-related quality of life at different ages</article-title>
+<source>Pharmacoeconomics</source>
+<year>2013</year>
+<month>04</month>
+<volume>31</volume>
+<issue>4</issue>
+<fpage>305</fpage>
+<lpage>315</lpage>
+<pub-id pub-id-type="doi">10.1007/s40273-013-0029-6</pub-id>
+<pub-id pub-id-type="medline">23512145</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref44">
+<label>44</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Shiroiwa</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Fukuda</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Ikeda</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Shimozuma</surname>
+<given-names>K</given-names>
+</name>
+</person-group>
+<article-title>QALY and productivity loss: empirical evidence for “double counting”</article-title>
+<source>Value Health</source>
+<year>2013</year>
+<month>06</month>
+<volume>16</volume>
+<issue>4</issue>
+<fpage>581</fpage>
+<lpage>587</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(13)00064-8"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jval.2013.02.009</pub-id>
+<pub-id pub-id-type="medline">23796292</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(13)00064-8</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref45">
+<label>45</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Tilling</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Krol</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Attema</surname>
+<given-names>AE</given-names>
+</name>
+<name name-style="western">
+<surname>Tsuchiya</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Brazier</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>van</surname>
+<given-names>EJ</given-names>
+</name>
+<name name-style="western">
+<surname>Brouwer</surname>
+<given-names>W</given-names>
+</name>
+</person-group>
+<article-title>Exploring a new method for deriving the monetary value of a QALY</article-title>
+<source>Eur J Health Econ</source>
+<year>2016</year>
+<month>09</month>
+<volume>17</volume>
+<issue>7</issue>
+<fpage>801</fpage>
+<lpage>809</lpage>
+<pub-id pub-id-type="doi">10.1007/s10198-015-0722-9</pub-id>
+<pub-id pub-id-type="medline">26289341</pub-id>
+<pub-id pub-id-type="pii">10.1007/s10198-015-0722-9</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref46">
+<label>46</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Tilling</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Krol</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Tsuchiya</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Brazier</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Exel</surname>
+<given-names>JV</given-names>
+</name>
+<name name-style="western">
+<surname>Brouwer</surname>
+<given-names>W</given-names>
+</name>
+</person-group>
+<article-title>Does the EQ-5D reflect lost earnings?</article-title>
+<source>Pharmacoeconomics</source>
+<year>2012</year>
+<month>01</month>
+<volume>30</volume>
+<issue>1</issue>
+<fpage>47</fpage>
+<lpage>61</lpage>
+<pub-id pub-id-type="doi">10.2165/11539910-000000000-00000</pub-id>
+<pub-id pub-id-type="medline">22066754</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref47">
+<label>47</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Trent</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Lehmann</surname>
+<given-names>HP</given-names>
+</name>
+<name name-style="western">
+<surname>Qian</surname>
+<given-names>Q</given-names>
+</name>
+<name name-style="western">
+<surname>Thompson</surname>
+<given-names>CB</given-names>
+</name>
+<name name-style="western">
+<surname>Ellen</surname>
+<given-names>JM</given-names>
+</name>
+<name name-style="western">
+<surname>Frick</surname>
+<given-names>KD</given-names>
+</name>
+</person-group>
+<article-title>Adolescent and parental utilities for the health states associated with pelvic inflammatory disease</article-title>
+<source>Sex Transm Infect</source>
+<year>2011</year>
+<month>12</month>
+<volume>87</volume>
+<issue>7</issue>
+<fpage>583</fpage>
+<lpage>587</lpage>
+<pub-id pub-id-type="doi">10.1136/sextrans-2011-050187</pub-id>
+<pub-id pub-id-type="medline">22001169</pub-id>
+<pub-id pub-id-type="pii">sextrans-2011-050187</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref48">
+<label>48</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>van Nooten</surname>
+<given-names>FE</given-names>
+</name>
+<name name-style="western">
+<surname>Koolman</surname>
+<given-names>X</given-names>
+</name>
+<name name-style="western">
+<surname>Brouwer</surname>
+<given-names>WBF</given-names>
+</name>
+</person-group>
+<article-title>The influence of subjective life expectancy on health state valuations using a 10 year TTO</article-title>
+<source>Health Econ</source>
+<year>2009</year>
+<month>05</month>
+<volume>18</volume>
+<issue>5</issue>
+<fpage>549</fpage>
+<lpage>558</lpage>
+<pub-id pub-id-type="doi">10.1002/hec.1385</pub-id>
+<pub-id pub-id-type="medline">18702082</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref49">
+<label>49</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Versteegh</surname>
+<given-names>MM</given-names>
+</name>
+<name name-style="western">
+<surname>Attema</surname>
+<given-names>AE</given-names>
+</name>
+<name name-style="western">
+<surname>Oppe</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Devlin</surname>
+<given-names>NJ</given-names>
+</name>
+<name name-style="western">
+<surname>Stolk</surname>
+<given-names>EA</given-names>
+</name>
+</person-group>
+<article-title>Time to tweak the TTO: results from a comparison of alternative specifications of the TTO</article-title>
+<source>Eur J Health Econ</source>
+<year>2013</year>
+<month>07</month>
+<volume>14 Suppl 1</volume>
+<fpage>S43</fpage>
+<lpage>51</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/23900664"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s10198-013-0507-y</pub-id>
+<pub-id pub-id-type="medline">23900664</pub-id>
+<pub-id pub-id-type="pmcid">PMC3728436</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref50">
+<label>50</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Xie</surname>
+<given-names>F</given-names>
+</name>
+<name name-style="western">
+<surname>Pullenayegum</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>Gaebel</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Bansback</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Bryan</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Ohinmaa</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Poissant</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Johnson</surname>
+<given-names>JA</given-names>
+</name>
+<collab>Canadian EVSG</collab>
+</person-group>
+<article-title>A time trade-off-derived value set of the EQ-5D-5L for Canada</article-title>
+<source>Med Care</source>
+<year>2016</year>
+<month>01</month>
+<volume>54</volume>
+<issue>1</issue>
+<fpage>98</fpage>
+<lpage>105</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/26492214"/>
+</comment>
+<pub-id pub-id-type="doi">10.1097/MLR.0000000000000447</pub-id>
+<pub-id pub-id-type="medline">26492214</pub-id>
+<pub-id pub-id-type="pmcid">PMC4674140</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref51">
+<label>51</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Harris</surname>
+<given-names>PA</given-names>
+</name>
+<name name-style="western">
+<surname>Taylor</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Thielke</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Payne</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Gonzalez</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Conde</surname>
+<given-names>JG</given-names>
+</name>
+</person-group>
+<article-title>Research electronic data capture (REDCap)--a metadata-driven methodology and workflow process for providing translational research informatics support</article-title>
+<source>J Biomed Inform</source>
+<year>2009</year>
+<month>04</month>
+<volume>42</volume>
+<issue>2</issue>
+<fpage>377</fpage>
+<lpage>381</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://linkinghub.elsevier.com/retrieve/pii/S1532-0464(08)00122-6"/>
+</comment>
+<pub-id pub-id-type="doi">10.1016/j.jbi.2008.08.010</pub-id>
+<pub-id pub-id-type="medline">18929686</pub-id>
+<pub-id pub-id-type="pii">S1532-0464(08)00122-6</pub-id>
+<pub-id pub-id-type="pmcid">PMC2700030</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref52">
+<label>52</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Willis</surname>
+<given-names>G</given-names>
+</name>
+</person-group>
+<source>Cognitive Interviewing: A Tool for Improving Questionnaire Design</source>
+<year>2005</year>
+<publisher-loc>Thousand Oaks, CA</publisher-loc>
+<publisher-name>Sage Publications</publisher-name>
+</nlm-citation>
+</ref>
+<ref id="ref53">
+<label>53</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Presser</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Couper</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Lessler</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Martin</surname>
+<given-names>E</given-names>
+</name>
+<name name-style="western">
+<surname>Martin</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Rothgeb</surname>
+<given-names>JM</given-names>
+</name>
+<name name-style="western">
+<surname>Singer</surname>
+<given-names>E</given-names>
+</name>
+</person-group>
+<article-title>Methods for Testing and Evaluating Survey Questions</article-title>
+<source>Public Opinion Quarterly</source>
+<year>2004</year>
+<month>04</month>
+<day>22</day>
+<volume>68</volume>
+<issue>1</issue>
+<fpage>109</fpage>
+<lpage>130</lpage>
+<pub-id pub-id-type="doi">10.1093/poq/nfh008</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref54">
+<label>54</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Crespo</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Hornillos</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Gómez</surname>
+<given-names>MM</given-names>
+</name>
+</person-group>
+<article-title>Assessing quality of life of nursing home residents with dementia: feasibility and limitations in patients with severe cognitive impairment</article-title>
+<source>Int Psychogeriatr</source>
+<year>2013</year>
+<month>10</month>
+<volume>25</volume>
+<issue>10</issue>
+<fpage>1687</fpage>
+<lpage>1695</lpage>
+<pub-id pub-id-type="doi">10.1017/S1041610213000823</pub-id>
+<pub-id pub-id-type="medline">23746265</pub-id>
+<pub-id pub-id-type="pii">S1041610213000823</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref55">
+<label>55</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Woods</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Nelis</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Martyr</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Roberts</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Whitaker</surname>
+<given-names>CJ</given-names>
+</name>
+<name name-style="western">
+<surname>Markova</surname>
+<given-names>I</given-names>
+</name>
+<name name-style="western">
+<surname>Roth</surname>
+<given-names>I</given-names>
+</name>
+<name name-style="western">
+<surname>Morris</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Clare</surname>
+<given-names>L</given-names>
+</name>
+</person-group>
+<article-title>What contributes to a good quality of life in early dementia? Awareness and the QoL-AD: a cross-sectional study</article-title>
+<source>Health Qual Life Outcomes</source>
+<year>2014</year>
+<month>06</month>
+<day>11</day>
+<volume>12</volume>
+<fpage>94</fpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://hqlo.biomedcentral.com/articles/10.1186/1477-7525-12-94"/>
+</comment>
+<pub-id pub-id-type="doi">10.1186/1477-7525-12-94</pub-id>
+<pub-id pub-id-type="medline">24919416</pub-id>
+<pub-id pub-id-type="pii">1477-7525-12-94</pub-id>
+<pub-id pub-id-type="pmcid">PMC4061777</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref56">
+<label>56</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Naglie</surname>
+<given-names>G</given-names>
+</name>
+<name name-style="western">
+<surname>Hogan</surname>
+<given-names>DB</given-names>
+</name>
+<name name-style="western">
+<surname>Krahn</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Black</surname>
+<given-names>SE</given-names>
+</name>
+<name name-style="western">
+<surname>Beattie</surname>
+<given-names>BL</given-names>
+</name>
+<name name-style="western">
+<surname>Patterson</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Macknight</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Freedman</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Borrie</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Byszewski</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Bergman</surname>
+<given-names>H</given-names>
+</name>
+<name name-style="western">
+<surname>Streiner</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Irvine</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Ritvo</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Comrie</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Kowgier</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Tomlinson</surname>
+<given-names>G</given-names>
+</name>
+</person-group>
+<article-title>Predictors of family caregiver ratings of patient quality of life in Alzheimer disease: cross-sectional results from the Canadian Alzheimer's Disease Quality of Life Study</article-title>
+<source>Am J Geriatr Psychiatry</source>
+<year>2011</year>
+<month>10</month>
+<volume>19</volume>
+<issue>10</issue>
+<fpage>891</fpage>
+<lpage>901</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/21946805"/>
+</comment>
+<pub-id pub-id-type="doi">10.1097/JGP.0b013e3182006a7f</pub-id>
+<pub-id pub-id-type="medline">21946805</pub-id>
+<pub-id pub-id-type="pii">00019442-201110000-00007</pub-id>
+<pub-id pub-id-type="pmcid">PMC3267778</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref57">
+<label>57</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Arons</surname>
+<given-names>AM</given-names>
+</name>
+<name name-style="western">
+<surname>Krabbe</surname>
+<given-names>PF</given-names>
+</name>
+<name name-style="western">
+<surname>Schölzel-Dorenbos</surname>
+<given-names>CJ</given-names>
+</name>
+<name name-style="western">
+<surname>van der Wilt</surname>
+<given-names>GJ</given-names>
+</name>
+<name name-style="western">
+<surname>Rikkert</surname>
+<given-names>MG</given-names>
+</name>
+</person-group>
+<article-title>Quality of life in dementia: a study on proxy bias</article-title>
+<source>BMC Med Res Methodol</source>
+<year>2013</year>
+<month>09</month>
+<day>06</day>
+<volume>13</volume>
+<fpage>110</fpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-13-110"/>
+</comment>
+<pub-id pub-id-type="doi">10.1186/1471-2288-13-110</pub-id>
+<pub-id pub-id-type="medline">24011428</pub-id>
+<pub-id pub-id-type="pii">1471-2288-13-110</pub-id>
+<pub-id pub-id-type="pmcid">PMC3844427</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref58">
+<label>58</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Bosboom</surname>
+<given-names>PR</given-names>
+</name>
+<name name-style="western">
+<surname>Alfonso</surname>
+<given-names>H</given-names>
+</name>
+<name name-style="western">
+<surname>Almeida</surname>
+<given-names>OP</given-names>
+</name>
+</person-group>
+<article-title>Determining the predictors of change in quality of life self-ratings and carer-ratings for community-dwelling people with Alzheimer disease</article-title>
+<source>Alzheimer Dis Assoc Disord</source>
+<year>2013</year>
+<volume>27</volume>
+<issue>4</issue>
+<fpage>363</fpage>
+<lpage>371</lpage>
+<pub-id pub-id-type="doi">10.1097/WAD.0b013e318293b5f8</pub-id>
+<pub-id pub-id-type="medline">23632266</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref59">
+<label>59</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Sousa</surname>
+<given-names>MF</given-names>
+</name>
+<name name-style="western">
+<surname>Santos</surname>
+<given-names>RL</given-names>
+</name>
+<name name-style="western">
+<surname>Arcoverde</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Simões</surname>
+<given-names>P</given-names>
+</name>
+<name name-style="western">
+<surname>Belfort</surname>
+<given-names>T</given-names>
+</name>
+<name name-style="western">
+<surname>Adler</surname>
+<given-names>I</given-names>
+</name>
+<name name-style="western">
+<surname>Leal</surname>
+<given-names>C</given-names>
+</name>
+<name name-style="western">
+<surname>Dourado</surname>
+<given-names>MC</given-names>
+</name>
+</person-group>
+<article-title>Quality of life in dementia: the role of non-cognitive factors in the ratings of people with dementia and family caregivers</article-title>
+<source>Int Psychogeriatr</source>
+<year>2013</year>
+<month>07</month>
+<volume>25</volume>
+<issue>7</issue>
+<fpage>1097</fpage>
+<lpage>1105</lpage>
+<pub-id pub-id-type="doi">10.1017/S1041610213000410</pub-id>
+<pub-id pub-id-type="medline">23561627</pub-id>
+<pub-id pub-id-type="pii">S1041610213000410</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref60">
+<label>60</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Conde-Sala</surname>
+<given-names>JL</given-names>
+</name>
+<name name-style="western">
+<surname>Reñé-Ramírez</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Turró-Garriga</surname>
+<given-names>O</given-names>
+</name>
+<name name-style="western">
+<surname>Gascón-Bayarri</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Juncadella-Puig</surname>
+<given-names>M</given-names>
+</name>
+<name name-style="western">
+<surname>Moreno-Cordón</surname>
+<given-names>L</given-names>
+</name>
+<name name-style="western">
+<surname>Viñas-Diez</surname>
+<given-names>V</given-names>
+</name>
+<name name-style="western">
+<surname>Vilalta-Franch</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Garre-Olmo</surname>
+<given-names>J</given-names>
+</name>
+</person-group>
+<article-title>Factors associated with the variability in caregiver assessments of the capacities of patients with Alzheimer disease</article-title>
+<source>J Geriatr Psychiatry Neurol</source>
+<year>2013</year>
+<month>06</month>
+<volume>26</volume>
+<issue>2</issue>
+<fpage>86</fpage>
+<lpage>94</lpage>
+<pub-id pub-id-type="doi">10.1177/0891988713481266</pub-id>
+<pub-id pub-id-type="medline">23514974</pub-id>
+<pub-id pub-id-type="pii">0891988713481266</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref61">
+<label>61</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Schulz</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Cook</surname>
+<given-names>TB</given-names>
+</name>
+<name name-style="western">
+<surname>Beach</surname>
+<given-names>SR</given-names>
+</name>
+<name name-style="western">
+<surname>Lingler</surname>
+<given-names>JH</given-names>
+</name>
+<name name-style="western">
+<surname>Martire</surname>
+<given-names>LM</given-names>
+</name>
+<name name-style="western">
+<surname>Monin</surname>
+<given-names>JK</given-names>
+</name>
+<name name-style="western">
+<surname>Czaja</surname>
+<given-names>SJ</given-names>
+</name>
+</person-group>
+<article-title>Magnitude and causes of bias among family caregivers rating Alzheimer disease patients</article-title>
+<source>Am J Geriatr Psychiatry</source>
+<year>2013</year>
+<month>01</month>
+<volume>21</volume>
+<issue>1</issue>
+<fpage>14</fpage>
+<lpage>25</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/23290199"/>
+</comment>
+<pub-id pub-id-type="doi">10.1097/JGP.0b013e31823e2fa9</pub-id>
+<pub-id pub-id-type="medline">23290199</pub-id>
+<pub-id pub-id-type="pii">S1064-7481(12)00006-1</pub-id>
+<pub-id pub-id-type="pmcid">PMC3330137</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref62">
+<label>62</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Black</surname>
+<given-names>BS</given-names>
+</name>
+<name name-style="western">
+<surname>Johnston</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Morrison</surname>
+<given-names>A</given-names>
+</name>
+<name name-style="western">
+<surname>Rabins</surname>
+<given-names>PV</given-names>
+</name>
+<name name-style="western">
+<surname>Lyketsos</surname>
+<given-names>CG</given-names>
+</name>
+<name name-style="western">
+<surname>Samus</surname>
+<given-names>QM</given-names>
+</name>
+</person-group>
+<article-title>Quality of life of community-residing persons with dementia based on self-rated and caregiver-rated measures</article-title>
+<source>Qual Life Res</source>
+<year>2012</year>
+<month>10</month>
+<volume>21</volume>
+<issue>8</issue>
+<fpage>1379</fpage>
+<lpage>1389</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/22038392"/>
+</comment>
+<pub-id pub-id-type="doi">10.1007/s11136-011-0044-z</pub-id>
+<pub-id pub-id-type="medline">22038392</pub-id>
+<pub-id pub-id-type="pmcid">PMC3296880</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref63">
+<label>63</label>
+<nlm-citation citation-type="web">
+<source>EuroQoL Group</source>
+<access-date>2017-06-13</access-date>
+<comment>
+Launch of REDCap EQ-5D
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.euroqol.org/news-list/article/launch-of-redcap-eq-5d.html">http://www.euroqol.org/news-list/article/launch-of-redcap-eq-5d.html</ext-link>
+<ext-link ext-link-type="webcite" xlink:href="6rCaQ2BFn"/>
+</comment>
+</nlm-citation>
+</ref>
+<ref id="ref64">
+<label>64</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Niessen</surname>
+<given-names>LW</given-names>
+</name>
+<name name-style="western">
+<surname>Bridges</surname>
+<given-names>J</given-names>
+</name>
+<name name-style="western">
+<surname>Lau</surname>
+<given-names>BD</given-names>
+</name>
+<name name-style="western">
+<surname>Wilson</surname>
+<given-names>RF</given-names>
+</name>
+<name name-style="western">
+<surname>Sharma</surname>
+<given-names>R</given-names>
+</name>
+<name name-style="western">
+<surname>Walker</surname>
+<given-names>DG</given-names>
+</name>
+<name name-style="western">
+<surname>Frick</surname>
+<given-names>KD</given-names>
+</name>
+<name name-style="western">
+<surname>Bass</surname>
+<given-names>EB</given-names>
+</name>
+</person-group>
+<source>Assessing the Impact of Economic Evidence on Policymakers in Health Care - a Systematic Review</source>
+<year>2012</year>
+<publisher-loc>Rockville, MD</publisher-loc>
+<publisher-name>Agency for Healthcare Research and Quality</publisher-name>
+</nlm-citation>
+</ref>
+<ref id="ref65">
+<label>65</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Willis</surname>
+<given-names>G</given-names>
+</name>
+</person-group>
+<source>Analysis of the Cognitive Interview in Questionnaire Design</source>
+<year>2015</year>
+<publisher-loc>Oxford, UK</publisher-loc>
+<publisher-name>Oxford University Press</publisher-name>
+</nlm-citation>
+</ref>
+<ref id="ref66">
+<label>66</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Willis</surname>
+<given-names>GB</given-names>
+</name>
+<name name-style="western">
+<surname>Artino</surname>
+<given-names>AR</given-names>
+</name>
+</person-group>
+<article-title>What Do Our Respondents Think We're Asking? Using Cognitive Interviewing to Improve Medical Education Surveys</article-title>
+<source>J Grad Med Educ</source>
+<year>2013</year>
+<month>09</month>
+<volume>5</volume>
+<issue>3</issue>
+<fpage>353</fpage>
+<lpage>356</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://europepmc.org/abstract/MED/24404294"/>
+</comment>
+<pub-id pub-id-type="doi">10.4300/JGME-D-13-00154.1</pub-id>
+<pub-id pub-id-type="medline">24404294</pub-id>
+<pub-id pub-id-type="pii">JGME-D-13-00154</pub-id>
+<pub-id pub-id-type="pmcid">PMC3771159</pub-id>
+</nlm-citation>
+</ref>
+<ref id="ref67">
+<label>67</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name name-style="western">
+<surname>Wee</surname>
+<given-names>H</given-names>
+</name>
+<name name-style="western">
+<surname>Li</surname>
+<given-names>S</given-names>
+</name>
+<name name-style="western">
+<surname>Xie</surname>
+<given-names>F</given-names>
+</name>
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</name>
+<name name-style="western">
+<surname>Luo</surname>
+<given-names>N</given-names>
+</name>
+<name name-style="western">
+<surname>Feeny</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Cheung</surname>
+<given-names>Y</given-names>
+</name>
+<name name-style="western">
+<surname>Machin</surname>
+<given-names>D</given-names>
+</name>
+<name name-style="western">
+<surname>Fong</surname>
+<given-names>K</given-names>
+</name>
+<name name-style="western">
+<surname>Thumboo</surname>
+<given-names>J</given-names>
+</name>
+</person-group>
+<article-title>Validity, feasibility and acceptability of time trade-off and standard gamble assessments in health valuation studies: a study in a multiethnic Asian population in Singapore</article-title>
+<source>Value Health</source>
+<year>2008</year>
+<month>03</month>
+<volume>11 Suppl 1</volume>
+<fpage>S3</fpage>
+<lpage>10</lpage>
+<comment>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S1098-3015(10)60641-9"/>
+</comment>
+<pub-id pub-id-type="doi">10.1111/j.1524-4733.2008.00361.x</pub-id>
+<pub-id pub-id-type="medline">18387064</pub-id>
+<pub-id pub-id-type="pii">S1098-3015(10)60641-9</pub-id>
+</nlm-citation>
+</ref>
+</ref-list>
+</back>
+</article>
